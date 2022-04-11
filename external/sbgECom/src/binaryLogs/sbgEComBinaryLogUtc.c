@@ -29,12 +29,14 @@ SbgErrorCode sbgEComBinaryLogParseUtcData(SbgStreamBuffer *pInputStream, SbgLogU
 	pOutputData->nanoSecond		= sbgStreamBufferReadInt32LE(pInputStream);
 	pOutputData->gpsTimeOfWeek	= sbgStreamBufferReadUint32LE(pInputStream);
 	
-	printf("Read the frame payload pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
-	printf("Read the frame payload pOutputData->year =%d\n", pOutputData->year);
-	printf("Read the frame payload pOutputData->month =%d\n", pOutputData->month);
-	printf("Read the frame payload pOutputData->day =%d\n", pOutputData->day);
-	printf("Read the frame payload pOutputData->hour =%d\n", pOutputData->hour);
-	printf("Read the frame payload pOutputData->second =%d\n", pOutputData->second);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->year =%d\n", pOutputData->year);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->month =%d\n", pOutputData->month);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->day =%d\n", pOutputData->day);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->hour =%d\n", pOutputData->hour);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->minute =%d\n", pOutputData->minute);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->second =%d\n", pOutputData->second);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->status =%d\n", pOutputData->status);
 
 	//
 	// Return if any error has occurred while parsing the frame

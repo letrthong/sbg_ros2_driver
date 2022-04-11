@@ -1,5 +1,5 @@
 ﻿#include "sbgEComBinaryLogStatus.h"
-
+#include <stdio.h>
 //----------------------------------------------------------------------//
 //- Operations                                                         -//
 //----------------------------------------------------------------------//
@@ -26,6 +26,13 @@ SbgErrorCode sbgEComBinaryLogParseStatusData(SbgStreamBuffer *pInputStream, SbgL
 	pOutputData->reserved2		= sbgStreamBufferReadUint32LE(pInputStream);
 	pOutputData->reserved3		= sbgStreamBufferReadUint16LE(pInputStream);
 	
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->generalStatus =%d\n", pOutputData->generalStatus);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved1 =%d\n", pOutputData->reserved1);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->comStatus =%d\n", pOutputData->comStatus);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->aidingStatus =%d\n", pOutputData->aidingStatus);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved2 =%d\n", pOutputData->reserved2);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved3 =%d\n", pOutputData->reserved3);
 	//
 	// Test if we have a additional information such as uptime (since version 1.7)
 	//

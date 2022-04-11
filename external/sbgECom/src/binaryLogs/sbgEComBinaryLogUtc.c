@@ -36,6 +36,8 @@ SbgErrorCode sbgEComBinaryLogParseUtcData(SbgStreamBuffer *pInputStream, SbgLogU
 	printf("sbgEComBinaryLogParseUtcData::pOutputData->hour =%d\n", pOutputData->hour);
 	printf("sbgEComBinaryLogParseUtcData::pOutputData->minute =%d\n", pOutputData->minute);
 	printf("sbgEComBinaryLogParseUtcData::pOutputData->second =%d\n", pOutputData->second);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->nanoSecond =%d\n", pOutputData->nanoSecond);
+	printf("sbgEComBinaryLogParseUtcData::pOutputData->gpsTimeOfWeek =%d\n", pOutputData->gpsTimeOfWeek);
 	printf("sbgEComBinaryLogParseUtcData::pOutputData->status =%d\n", pOutputData->status);
 
 	//

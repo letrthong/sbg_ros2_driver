@@ -96,16 +96,16 @@ SbgErrorCode sbgEComBinaryLogParseEkfQuatData(SbgStreamBuffer *pInputStream, Sbg
 	pOutputData->status			= sbgStreamBufferReadUint32LE(pInputStream);
 
 
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->timeStamp =[%d]\n", pOutputData->timeStamp);
 
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[0] =%d\n", pOutputData->quaternion[0]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[1] =%d\n", pOutputData->quaternion[1]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[2] =%d\n", pOutputData->quaternion[2]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[3] =%d\n", pOutputData->quaternion[3]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[0] =[%d]\n", pOutputData->quaternion[0]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[1] =[%d]\n", pOutputData->quaternion[1]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[2] =[%d]\n", pOutputData->quaternion[2]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[3] =[%d]\n", pOutputData->quaternion[3]);
 
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[0] =%d\n", pOutputData->eulerStdDev[0]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[1] =%d\n", pOutputData->eulerStdDev[1]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[2] =%d\n", pOutputData->eulerStdDev[2]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[0] =[%d]\n", pOutputData->eulerStdDev[0]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[1] =[%d]\n", pOutputData->eulerStdDev[1]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[2] =[%d]\n", pOutputData->eulerStdDev[2]);
 
 	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->status =%d\n", pOutputData->status);
 
@@ -184,28 +184,28 @@ SbgErrorCode sbgEComBinaryLogParseEkfNavData(SbgStreamBuffer *pInputStream, SbgL
 
 	pOutputData->status				= sbgStreamBufferReadUint32LE(pInputStream);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->timeStamp =[%d]\n", pOutputData->timeStamp);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[0] =%d\n", pOutputData->velocity[0]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[1] =%d\n", pOutputData->velocity[1]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[2] =%d\n", pOutputData->velocity[2]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[0] =[%d]\n", pOutputData->velocity[0]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[1] =[%d]\n", pOutputData->velocity[1]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocity[2] =[%d]\n", pOutputData->velocity[2]);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[0] =%d\n", pOutputData->velocityStdDev[0]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[1] =%d\n", pOutputData->velocityStdDev[1]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[2] =%d\n", pOutputData->velocityStdDev[2]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[0] =[%d]\n", pOutputData->velocityStdDev[0]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[1] =[%d]\n", pOutputData->velocityStdDev[1]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->velocityStdDev[2] =[%d]\n", pOutputData->velocityStdDev[2]);
 
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[0] =%d\n", pOutputData->position[0]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[1] =%d\n", pOutputData->position[1]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[2] =%d\n", pOutputData->position[2]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[0] =[%d]\n", pOutputData->position[0]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[1] =[%d]\n", pOutputData->position[1]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->position[2] =[%d]\n", pOutputData->position[2]);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->undulation =%d\n", pOutputData->undulation);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->undulation =[%d]\n", pOutputData->undulation);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[0] =%d\n", pOutputData->positionStdDev[0]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[1] =%d\n", pOutputData->positionStdDev[1]);
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[2] =%d\n", pOutputData->positionStdDev[2]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[0] =[%d]\n", pOutputData->positionStdDev[0]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[1] =[%d]\n", pOutputData->positionStdDev[1]);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->positionStdDev[2] =[%d]\n", pOutputData->positionStdDev[2]);
 
-	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->status =%d\n", pOutputData->status);
+	printf("sbgEComBinaryLogParseEkfNavData::pOutputData->status =[%d]\n", pOutputData->status);
 
 
 	//

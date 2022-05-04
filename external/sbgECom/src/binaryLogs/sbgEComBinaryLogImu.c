@@ -112,10 +112,9 @@ SbgErrorCode sbgEComBinaryLogParseImuData(SbgStreamBuffer *pInputStream, SbgLogI
 	//
 	// Return if any error has occurred while parsing the frame
 	//
-	time_t start_seconds  = time(NULL);
+	static time_t start_seconds  = time(NULL);
 	static int count = 0;
-    seconds = time(NULL);
-
+  
 	if(count == 0){
 		start_seconds = time(NULL);
 	}

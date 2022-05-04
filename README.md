@@ -337,7 +337,9 @@ Please report bugs and/or issues using the [Issue Tracker](https://github.com/SB
 In order to contribute to the code, please use Pull requests to the `devel` branch.<br />
 If you have some feature requests, use the [Issue Tracker](https://github.com/SBG-Systems/sbg_ros_driver/issues) as well.
 
-source install/setup.bash 
-ros2 launch sbg_driver sbg_device_launch.py
 
-ros2 topic echo /sbg/imu_data > out.log
+* colcon build   --symlink-install --packages-select   sbg_driver
+* source install/setup.bash 
+* ros2 launch sbg_driver sbg_device_launch.py
+
+* ros2 topic echo /sbg/imu_data > out.log

@@ -1,6 +1,6 @@
 ﻿#include "sbgEComBinaryLogImu.h"
 #include <stdio.h>
-#include <ctime>
+#include <time.h>
 
 //----------------------------------------------------------------------//
 //- Getter / helpers                                                   -//
@@ -112,19 +112,19 @@ SbgErrorCode sbgEComBinaryLogParseImuData(SbgStreamBuffer *pInputStream, SbgLogI
 	//
 	// Return if any error has occurred while parsing the frame
 	//
-	std::time_t start_ms = std::time(nullptr);
-    
+	time_t start_seconds  = time(NULL);
 	static int count = 0;
+    seconds = time(NULL);
 
 	if(count == 0){
-		start_ms = std::time(nullptr);
+		start_seconds = time(NULL);
 	}
 	count = count+ 1;
     
 	if(count >= 200){
 		count = 0;
-		end_ms = std::time(nullptr);
-		threshold = end_ms - start_ms
+		ime_t end_seconds = std::time(NULL);
+		threshold = start_seconds - end_seconds;
 		printf("sbgEComBinaryLogParseImuData::pOutputData->200 messages with threshold=%d\n",threshold);
 	}
 

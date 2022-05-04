@@ -123,7 +123,7 @@ SbgErrorCode sbgEComBinaryLogParseImuData(SbgStreamBuffer *pInputStream, SbgLogI
 	if(count >= 200){
 		count = 0;
 		time_t end_seconds = time(NULL);
-		int threshold = start_seconds - end_seconds;
+		int threshold = end_seconds - start_seconds;
 		printf("sbgEComBinaryLogParseImuData::pOutputData->200 messages with threshold=%d\n",threshold);
 	}
 

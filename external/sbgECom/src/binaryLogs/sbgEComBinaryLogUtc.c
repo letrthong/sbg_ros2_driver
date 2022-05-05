@@ -1,5 +1,7 @@
 ﻿#include "sbgEComBinaryLogUtc.h"
 #include <stdio.h>
+#include <time.h>
+
 //----------------------------------------------------------------------//
 //- Operations                                                         -//
 //----------------------------------------------------------------------//
@@ -43,6 +45,21 @@ SbgErrorCode sbgEComBinaryLogParseUtcData(SbgStreamBuffer *pInputStream, SbgLogU
 	//
 	// Return if any error has occurred while parsing the frame
 	//
+	static time_t start_seconds ;
+	static int count = 0;
+  
+	if(count == 0){
+		start_seconds = time(NULL);
+	}
+	count = count+ 1;
+    
+	if(count >= 10){
+		count = 0;
+		time_t end_seconds = time(NULL);
+		int threshold = end_seconds - start_seconds;
+		printf("sbgEComBinaryLogParseUtcData::pOutputData->10 messages with threshold=%d\n",threshold);
+	}
+
 	return sbgStreamBufferGetLastError(pInputStream);
 }
 

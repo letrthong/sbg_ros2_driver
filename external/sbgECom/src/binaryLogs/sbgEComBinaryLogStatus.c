@@ -27,12 +27,12 @@ SbgErrorCode sbgEComBinaryLogParseStatusData(SbgStreamBuffer *pInputStream, SbgL
 	pOutputData->reserved3		= sbgStreamBufferReadUint16LE(pInputStream);
 	
 	printf("sbgEComBinaryLogParseStatusData::pOutputData->timeStamp =[%d]\n", pOutputData->timeStamp);
-	printf("sbgEComBinaryLogParseStatusData::pOutputData->generalStatus =[%d]\n", pOutputData->generalStatus);
-	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved1 =[%d]\n", pOutputData->reserved1);
-    printf("sbgEComBinaryLogParseStatusData::pOutputData->comStatus =[%d]\n", pOutputData->comStatus);
-    printf("sbgEComBinaryLogParseStatusData::pOutputData->aidingStatus =[%d]\n", pOutputData->aidingStatus);
-    printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved2 =[%d]\n", pOutputData->reserved2);
-	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved3 =[%d]\n", pOutputData->reserved3);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->generalStatus =[%f]\n", pOutputData->generalStatus);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved1 =[%f]\n", pOutputData->reserved1);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->comStatus =[%f]\n", pOutputData->comStatus);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->aidingStatus =[%f]\n", pOutputData->aidingStatus);
+    printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved2 =[%f]\n", pOutputData->reserved2);
+	printf("sbgEComBinaryLogParseStatusData::pOutputData->reserved3 =[%f]\n", pOutputData->reserved3);
 	//
 	// Test if we have a additional information such as uptime (since version 1.7)
 	//

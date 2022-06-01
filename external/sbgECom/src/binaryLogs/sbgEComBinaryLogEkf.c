@@ -98,14 +98,14 @@ SbgErrorCode sbgEComBinaryLogParseEkfQuatData(SbgStreamBuffer *pInputStream, Sbg
 
 	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->timeStamp =[%d]\n", pOutputData->timeStamp);
 
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[0] =[%d]\n", pOutputData->quaternion[0]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[1] =[%d]\n", pOutputData->quaternion[1]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[2] =[%d]\n", pOutputData->quaternion[2]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[3] =[%d]\n", pOutputData->quaternion[3]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[0] =[%f]\n", pOutputData->quaternion[0]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[1] =[%f]\n", pOutputData->quaternion[1]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[2] =[%f]\n", pOutputData->quaternion[2]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->quaternion[3] =[%f]\n", pOutputData->quaternion[3]);
 
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[0] =[%d]\n", pOutputData->eulerStdDev[0]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[1] =[%d]\n", pOutputData->eulerStdDev[1]);
-	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[2] =[%d]\n", pOutputData->eulerStdDev[2]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[0] =[%f]\n", pOutputData->eulerStdDev[0]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[1] =[%f]\n", pOutputData->eulerStdDev[1]);
+	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->eulerStdDev[2] =[%f]\n", pOutputData->eulerStdDev[2]);
 
 	printf("sbgEComBinaryLogParseEkfQuatData::pOutputData->status =%d\n", pOutputData->status);
 

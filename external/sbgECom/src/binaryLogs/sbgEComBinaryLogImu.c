@@ -85,29 +85,29 @@ SbgErrorCode sbgEComBinaryLogParseImuData(SbgStreamBuffer *pInputStream, SbgLogI
 	pOutputData->deltaAngle[1]		= sbgStreamBufferReadFloatLE(pInputStream);
 	pOutputData->deltaAngle[2]		= sbgStreamBufferReadFloatLE(pInputStream);
 
-	printf("sbgEComBinaryLogParseImuData::pOutputData->timeStamp =%d\n", pOutputData->timeStamp);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->status =%d\n", pOutputData->status);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->timeStamp =%f\n", pOutputData->timeStamp);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->status =%f\n", pOutputData->status);
 
 
-	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[0] =%d\n",pOutputData->accelerometers[0]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[1] =%d\n",pOutputData->accelerometers[1]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[2] =%d\n",pOutputData->accelerometers[2]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[0] =%f\n",pOutputData->accelerometers[0]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[1] =%f\n",pOutputData->accelerometers[1]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->accelerometers[2] =%f\n",pOutputData->accelerometers[2]);
 
-	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[0] =%d\n",pOutputData->gyroscopes[0]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[1] =%d\n",pOutputData->gyroscopes[1]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[2] =%d\n",pOutputData->gyroscopes[2]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[0] =%f\n",pOutputData->gyroscopes[0]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[1] =%f\n",pOutputData->gyroscopes[1]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->gyroscopes[2] =%f\n",pOutputData->gyroscopes[2]);
 
-	printf("sbgEComBinaryLogParseImuData::pOutputData->temperature =%d\n",pOutputData->temperature);
-
-
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[0] =%d\n",pOutputData->deltaVelocity[0]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[1] =%d\n",pOutputData->deltaVelocity[1]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[2] =%d\n",pOutputData->deltaVelocity[2]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->temperature =%f\n",pOutputData->temperature);
 
 
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[0] =%d\n",pOutputData->deltaAngle[0]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[1] =%d\n",pOutputData->deltaAngle[1]);
-	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[2] =%d\n",pOutputData->deltaAngle[2]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[0] =%f\n",pOutputData->deltaVelocity[0]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[1] =%f\n",pOutputData->deltaVelocity[1]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaVelocity[2] =%f\n",pOutputData->deltaVelocity[2]);
+
+
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[0] =%f\n",pOutputData->deltaAngle[0]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[1] =%f\n",pOutputData->deltaAngle[1]);
+	printf("sbgEComBinaryLogParseImuData::pOutputData->deltaAngle[2] =%f\n",pOutputData->deltaAngle[2]);
 
 	//
 	// Return if any error has occurred while parsing the frame

@@ -343,3 +343,5 @@ If you have some feature requests, use the [Issue Tracker](https://github.com/SB
 * ros2 launch sbg_driver sbg_device_launch.py
 
 * ros2 topic echo /sbg/imu_data > out.log
+* ros2 topic hz /sbg/imu_data
+
